@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>krds</title>
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="페이지 제목" />
+    <meta property="og:description" content="페이지 설명" />
+    <meta property="og:image" content="http://www.mysite.com/article/article1_featured_image.jpg" />
+    <meta property="og:url" content="http://www.mysite.com/article/article1.html" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="페이지 제목" />
+    <meta name="twitter:description" content="페이지 설명" />
+    <meta name="twitter:image" content="http://www.mysite.com/article/article1.html" />
+    <meta name="twitter:domain" content="사이트 명" />
+    <link rel="shortcut icon" href="http://www.mysite.com/favicon.ico" />
+    <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css" />
+    <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
+    <link rel="stylesheet" href="../resources/css/styles.css" />
+    <script src="https://kit.fontawesome.com/9d37948b2c.js" crossorigin="anonymous"></script>
+    <!-- css -->
+    <script defer src="../resources/js/include.js"></script>
+    <script src="https://unpkg.com/gsap@3/dist/gsap.min.js"></script>
+    <script src="https://unpkg.com/gsap@3/dist/ScrollTrigger.min.js"></script>
+    <script src="https://unpkg.com/lenis@1.1.14/dist/lenis.min.js"></script>
+    <!-- gsap -->
+    <script defer src="../resources/js/pattern/ui-pattern-script.js"></script>
+  </head>
+  <body>
+    <style>
+      section {
+        width: 100%;
+        overflow-x: hidden;
+      }
+      .img_area {
+        width: 100%;
+      }
+      .img_area img {
+        width: 100%;
+        height: 100vh;
+        object-fit: cover;
+        position: absolute;
+        left: 0;
+        top: 0;
+      }
+
+      .txt_area {
+        position: relative;
+      }
+      .txt_area .txt_container {
+        text-align: center;
+        color: #333;
+        font-size: 2rem;
+        font-family: "AlbraSansTRIAL-Medium";
+      }
+      .txt_area .txt_container li {
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        .section {
+          .txt {
+            font-family: "Noto Sans KR";
+            margin-top: 20px;
+            font-size: 1.3rem;
+          }
+        }
+      }
+    </style>
+    <div id="skip-nav">
+      <a href="#gnb">메뉴 바로가기</a>
+      <a href="#container">본문 바로가기</a>
+    </div>
+    <header id="header" class="">
+      <div class="inner">
+        <h1 id="logo">
+          <a href="#">
+            <img src="../resources/images/pattern/common/sulwhasoo_orange_logo_220902.jpeg" alt="설화수로고" />
+          </a>
+        </h1>
+        <nav id="gnb" class="gnb">
+          <ul class="gnb__depth1">
+            <li>
+              <a href="shopping.html">
+                <span>Products</span>
+              </a>
+            </li>
+            <li>
+              <a href="#"><span>Heritage</span></a>
+            </li>
+          </ul>
+        </nav>
+        <div class="util">
+          <!-- active 추가시 활성화 -->
+          <div class="lang">
+            <button class="lang__btn">kor</button>
+            <ul class="lang__lst">
+              <li>kor</li>
+              <li>eng</li>
+            </ul>
+          </div>
+          <button class="search">
+            <span class="blind">검색</span>
+          </button>
+          <button class="all-menu">
+            <span class="blind">전체메뉴</span>
+          </button>
+        </div>
+      </div>
+      <!-- active 추가시 활성화 -->
+      <nav id="nav-all" class="">
+        <div class="inner">
+          <a href="">
+            <img src="../resources/images/pattern/common/sulwhasoo_orange_logo_220902.jpeg" alt="" />
+          </a>
+          <ul class="gnb__depth1">
+            <span class="nav-all-title">Products</span>
+            <li>
+              <a href="#">
+                <span>전체</span>
+              </a>
+              <ul class="gnb__depth2">
+                <li><a href="#">menu1-2</a></li>
+                <li><a href="#">menu1-2</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#"><span>라인별</span></a>
+              <ul class="gnb__depth2">
+                <li><a href="#">menu2-1</a></li>
+                <li><a href="#">menu2-2</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#"><span>유형별</span></a>
+              <ul class="gnb__depth2">
+                <li><a href="#">menu3-1</a></li>
+                <li><a href="#">menu3-2</a></li>
+              </ul>
+            </li>
+          </ul>
+          <button class="close">
+            <i class="fa-solid fa-xmark fa-xl"></i>
+          </button>
+          <div class="nav-all-right">
+            <ul>
+              <span>story</span>
+              <li>
+                <a href="#">Heritage</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <ul class="footer-social">
+              <li>
+                <a href="https://www.youtube.com/user/sulwhasookorea" target="_blank">
+                  <i class="fa-brands fa-youtube fa-xl"></i>
+                </a>
+              </li>
+              <li>
+                <a href="https://www.instagram.com/sulwhasoo.official/" target="_blank"><i class="fa-brands fa-instagram fa-xl"></i></a>
+              </li>
+              <li>
+                <a href="https://www.facebook.com/sulwhasoo.official/?locale=ko_KR" target="_blank"><i class="fa-brands fa-square-facebook fa-xl"></i></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <div class="intro">
+      <video class="bg-video__content" controls playsinline autoplay muted loop>
+        <source src="../resources/images/pattern/common/자음생크림.mp4" type="video/mp4" />
+      </video>
+    </div>
+    <section>
+      <!-- 이미지 영역 -->
+      <div class="img_area">
+        <img src="../resources/images/pattern/common/concentrated_ginseng_renewing_texture-01_pc_kr_240801.jpg" />
+        <img src="../resources/images/pattern/common/section3.jpg" />
+        <img src="../resources/images/pattern/common/the_ultimate_s_cream_more_bg_pc_kr_230829.jpg" />
+      </div>
+
+      <!-- 텍스트 영역 -->
+      <div class="txt_area">
+        <ul class="txt_container">
+          <li>
+            <div class="section">
+              <div class="section-img">
+                <img src="../resources/images/pattern/common/자음생크림3.png" alt="자음생크림" />
+              </div>
+              <div class="section-content">
+                <div data-aos="fade-up" data-aos-duration="3000">
+                  <div class="section-contentInner">
+                    <h2 class="title">
+                      Concentrated<br />
+                      Rejuvenating<br />
+                      Cream
+                    </h2>
+                    <div class="txt">
+                      <p class="txt__descMain">자생력으로 차오른 고밀도 피부</p>
+                      <p class="txt__descSub">
+                        수분과 영양이 피부 사이사이<br />
+                        녹아들어 매끄러운 피부결로 가꿔주는 수분탄력 크림
+                      </p>
+                      <p class="txt__price">30ml 168,000원 50ml 270,000원</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li></li>
+          <li>
+            <div class="section">
+              <div class="section-img">
+                <img style="width: 50%" ; src="../resources/images/pattern/common/first_care_activating_serum_vi_feature02_img_pc_kr_240213.png" alt="윤조에센스" />
+              </div>
+              <div class="section-content">
+                <div data-aos="fade-up" data-aos-duration="3000">
+                  <div class="section-contentInner">
+                    <h2 class="title">
+                      First Care<br />
+                      Activating<br />
+                      Serum VI
+                    </h2>
+                    <div class="txt">
+                      <p class="txt__descMain">윤조에센스 6세대</p>
+                      <p class="txt__descSub">피부 속 건조부터 모공, 주름, 탄력까지 매일 차오르는 윤빛 피부</p>
+                      <p class="txt__price">30ml 55,000원 60ml 105,000원 90ml 140,000원</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <section class="heritage">
+              <div class="heritage__inner">
+                <div data-aos="fade-up" data-aos-duration="3000">
+                  <h3 class="heritage__title">OUR BELIEF</h3>
+                  <p class="heritage__body">
+                    설화수의 시선은 부분이 아닌 전체를 바라봅니다.<br />
+                    설화수는 겉으로 드러난 문제뿐 아니라 피부 속 근본 원인까지 주목합니다.
+                  </p>
+                </div>
+              </div>
+
+              <div class="heritage__inner">
+                <div data-aos="fade-up" data-aos-duration="3000">
+                  <h3 class="heritage__title">OUR INNOVATION</h3>
+                  <p class="heritage__body">설화수가 만드는 제품은 한국의 미학과 현대적 감성이 조화롭게 공존하는 혁신의 결정체입니다. 아름다운 피부를 위한 끊임 없는 노력과 수십년의 연구로 일구어낸 결과물입니다.</p>
+                </div>
+              </div>
+              <div class="heritage__inner">
+                <div data-aos="fade-up" data-aos-duration="3000">
+                  <h3 class="heritage__title">OUR INGREDIENT</h3>
+                  <p class="heritage__body">“먹어서 좋은 인삼, 피부에 발라도 좋지 않을까?’ 라는 호기심에서 시작해 설화수의 건강한 피부를 위한 인삼 연구는 멈추지 않고 이어졌습니다.</p>
+                </div>
+              </div>
+              <div class="heritage__inner">
+                <div data-aos="fade-up" data-aos-duration="3000">
+                  <h3 class="heritage__title">CREATED BY SULWHASOO</h3>
+                  <p class="heritage__body">설화수가 만드는 제품은 한국의 미학과 현대적 감성이 조화롭게 공존하는 혁신의 결정체입니다. 아름다운 피부를 위한 끊임 없는 노력과 수십년의 연구로 일구어낸 결과물입니다.</p>
+                </div>
+              </div>
+            </section>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <footer id="footer" include-html="./layout/footer.html"></footer>
+    <button id="to-top" onclick="window.scrollTo(0,0)">top</button>
+  </body>
+</html>

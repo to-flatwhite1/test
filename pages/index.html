@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>krds</title>
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="페이지 제목" />
+    <meta property="og:description" content="페이지 설명" />
+    <meta property="og:image" content="http://www.mysite.com/article/article1_featured_image.jpg" />
+    <meta property="og:url" content="http://www.mysite.com/article/article1.html" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="페이지 제목" />
+    <meta name="twitter:description" content="페이지 설명" />
+    <meta name="twitter:image" content="http://www.mysite.com/article/article1.html" />
+    <meta name="twitter:domain" content="사이트 명" />
+    <link rel="shortcut icon" href="http://www.mysite.com/favicon.ico" />
+    <!-- css -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css" />
+    <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
+    <link rel="stylesheet" href="../resources/css/styles.css" />
+    <script src="https://kit.fontawesome.com/9d37948b2c.js" crossorigin="anonymous"></script>
+    <!-- font-awesome -->
+    <!-- js -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- aos -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- gsap -->
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/lodash@4.17.21/lodash.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/throttle@1.0.3/throttle.min.js"></script>
+    <script defer src="../resources/js/pattern/ui-swiper.js"></script>
+    <script defer src="../resources/js/include.js"></script>
+    <script defer src="../resources/js/pattern/gsap.js"></script>
+    <script defer src="../resources/js/pattern/ui-pattern-script.js"></script>
+  </head>
+  <body>
+    <div id="skip-nav">
+      <a href="#gnb">메뉴 바로가기</a>
+      <a href="#container">본문 바로가기</a>
+    </div>
+    <div id="wrap">
+      <div class="intro">
+        <video class="bg-video__content" controls playsinline autoplay muted loop>
+          <source src="../resources/images/pattern/common/자음생크림.mp4" type="video/mp4" />
+        </video>
+      </div>
+      <!-- active 추가시 depth2 활성화 -->
+
+      <header id="header" class="">
+        <div class="inner">
+          <h1 id="logo">
+            <a href="#">
+              <img src="../resources/images/pattern/common/sulwhasoo_orange_logo_220902.jpeg" alt="설화수로고" />
+            </a>
+          </h1>
+          <nav id="gnb" class="gnb">
+            <ul class="gnb__depth1">
+              <li>
+                <a href="shopping.html">
+                  <span>Products</span>
+                </a>
+              </li>
+              <li>
+                <a href="#"><span>Heritage</span></a>
+              </li>
+            </ul>
+          </nav>
+          <div class="util">
+            <!-- active 추가시 활성화 -->
+            <div class="lang">
+              <button class="lang__btn">kor</button>
+              <ul class="lang__lst">
+                <li>kor</li>
+                <li>eng</li>
+              </ul>
+            </div>
+            <button class="search">
+              <span class="blind">검색</span>
+            </button>
+            <button class="all-menu">
+              <span class="blind">전체메뉴</span>
+            </button>
+          </div>
+        </div>
+        <!-- active 추가시 활성화 -->
+        <nav id="nav-all" class="">
+          <div class="inner">
+            <a href="">
+              <img src="../resources/images/pattern/common/sulwhasoo_orange_logo_220902.jpeg" alt="" />
+            </a>
+            <ul class="gnb__depth1">
+              <span class="nav-all-title">Products</span>
+              <li>
+                <a href="#">
+                  <span>전체</span>
+                </a>
+                <ul class="gnb__depth2">
+                  <li><a href="#">menu1-2</a></li>
+                  <li><a href="#">menu1-2</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="#"><span>라인별</span></a>
+                <ul class="gnb__depth2">
+                  <li><a href="#">menu2-1</a></li>
+                  <li><a href="#">menu2-2</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="#"><span>유형별</span></a>
+                <ul class="gnb__depth2">
+                  <li><a href="#">menu3-1</a></li>
+                  <li><a href="#">menu3-2</a></li>
+                </ul>
+              </li>
+            </ul>
+            <button class="close">
+              <i class="fa-solid fa-xmark fa-xl"></i>
+            </button>
+            <div class="nav-all-right">
+              <ul>
+                <span>story</span>
+                <li>
+                  <a href="#">Heritage</a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer-section">
+              <ul class="footer-social">
+                <li>
+                  <a href="https://www.youtube.com/user/sulwhasookorea" target="_blank">
+                    <i class="fa-brands fa-youtube fa-xl"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://www.instagram.com/sulwhasoo.official/" target="_blank"><i class="fa-brands fa-instagram fa-xl"></i></a>
+                </li>
+                <li>
+                  <a href="https://www.facebook.com/sulwhasoo.official/?locale=ko_KR" target="_blank"><i class="fa-brands fa-square-facebook fa-xl"></i></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </header>
+
+      <main class="container">
+        <section class="section-product product-intro">
+          <div class="section-img">
+            <img src="../resources/images/pattern/common/자음생크림3.png" alt="자음생크림" />
+          </div>
+          <div class="section-content">
+            <div data-aos="fade-up" data-aos-duration="3000">
+              <div class="section-contentInner">
+                <h2 class="title">
+                  Concentrated<br />
+                  Rejuvenating<br />
+                  Cream
+                </h2>
+                <div class="txt">
+                  <p class="txt__descMain">자생력으로 차오른 고밀도 피부</p>
+                  <p class="txt__descSub">
+                    수분과 영양이 피부 사이사이<br />
+                    녹아들어 매끄러운 피부결로 가꿔주는 수분탄력 크림
+                  </p>
+                  <p class="txt__price">30ml 168,000원 50ml 270,000원</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="section-product">
+          <video class="cream_video" controls playsinline autoplay muted loop>
+            <source src="../resources/images/pattern/common/자음생크림_main.mp4" type="video/mp4" />
+          </video>
+          <div class="section-content product-second">
+            <div class="section-contentInner">
+              <img src="../resources/images/pattern/common/first_care_activating_serum_vi_feature02_img_pc_kr_240213.png" alt="" />
+              <div data-aos="fade-up" data-aos-duration="3000">
+                <h2 class="title">
+                  First Care<br />
+                  Activating<br />
+                  Serum VI
+                </h2>
+                <div class="txt">
+                  <p class="txt__descMain">윤조에센스 6세대</p>
+                  <p class="txt__descSub">피부 속 건조부터 모공, 주름, 탄력까지 매일 차오르는 윤빛 피부</p>
+                  <p class="txt__price">30ml 55,000원 60ml 105,000원 90ml 140,000원</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="video">
+          <video class="yunjo_video" controls playsinline autoplay muted loop>
+            <source src="../resources/images/pattern/common/윤조에센스.mp4" type="video/mp4" />
+          </video>
+        </section>
+        <section class="heritage">
+          <div class="heritage__inner">
+            <div data-aos="fade-up" data-aos-duration="3000">
+              <h3 class="heritage__title">OUR BELIEF</h3>
+              <p class="heritage__body">
+                설화수의 시선은 부분이 아닌 전체를 바라봅니다.<br />
+                설화수는 겉으로 드러난 문제뿐 아니라 피부 속 근본 원인까지 주목합니다.
+              </p>
+            </div>
+          </div>
+
+          <div class="heritage__inner">
+            <div data-aos="fade-up" data-aos-duration="3000">
+              <h3 class="heritage__title">OUR INNOVATION</h3>
+              <p class="heritage__body">설화수가 만드는 제품은 한국의 미학과 현대적 감성이 조화롭게 공존하는 혁신의 결정체입니다. 아름다운 피부를 위한 끊임 없는 노력과 수십년의 연구로 일구어낸 결과물입니다.</p>
+            </div>
+          </div>
+          <div class="heritage__inner">
+            <div data-aos="fade-up" data-aos-duration="3000">
+              <h3 class="heritage__title">OUR INGREDIENT</h3>
+              <p class="heritage__body">“먹어서 좋은 인삼, 피부에 발라도 좋지 않을까?’ 라는 호기심에서 시작해 설화수의 건강한 피부를 위한 인삼 연구는 멈추지 않고 이어졌습니다.</p>
+            </div>
+          </div>
+          <div class="heritage__inner">
+            <div data-aos="fade-up" data-aos-duration="3000">
+              <h3 class="heritage__title">CREATED BY SULWHASOO</h3>
+              <p class="heritage__body">설화수가 만드는 제품은 한국의 미학과 현대적 감성이 조화롭게 공존하는 혁신의 결정체입니다. 아름다운 피부를 위한 끊임 없는 노력과 수십년의 연구로 일구어낸 결과물입니다.</p>
+            </div>
+          </div>
+        </section>
+        <!-- .heritage -->
+        <section class="animated-title">
+          <div class="track">
+            <div class="content">heritage&nbsp;heritage&nbsp;heritage&nbsp;heritage</div>
+          </div>
+        </section>
+        <!-- animate -->
+        <section class="collection">
+          <h2 class="collection__products2">All Products</h2>
+          <a href="./shopping.html"><span class="collection__viewMore">view more</span></a>
+          <img src="../resources/images/pattern/common/collection2.jpg" alt="" />
+        </section>
+        <section class="item">
+          <ul>
+            <li>
+              <a href="#">
+                <img src="../resources/images/pattern/common/240628_final_SWS_KR_CGR-Emulsion_thumbnail_Product_640.jpg" alt="자음생유액" />
+                <div class="stagger">
+                  <span class="product-line">자음생<br /></span>
+                  <strong class="product-description">
+                    자음생유액<br />
+                    <span class="product-size">125ml<br /></span
+                    ><!-- 1027 ws -->
+                  </strong>
+                  <span class="product-price">￦115,000</span>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="../resources/images/pattern/common/240628_final_SWS_KR_CGR-Water_thumbnail_Product_640.jpg" alt="자음생수" />
+                <div class="stagger">
+                  <span class="product-line">자음생<br /></span>
+                  <strong class="product-description">
+                    자음생수<br />
+                    <span class="product-size">150ml<br /></span
+                    ><!-- 1027 ws -->
+                  </strong>
+                  <span class="product-price">￦115,000</span>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="../resources/images/pattern/common/240628_final_SWS_KR_CGR-EyeCream_thumbnail_Product_640.jpg" alt="자음생아이크림" />
+                <div class="stagger">
+                  <span class="product-line">자음생<br /></span>
+                  <strong class="product-description">
+                    자음생아이크림<br />
+                    <span class="product-size">15ml<br /></span
+                    ><!-- 1027 ws -->
+                  </strong>
+                  <span class="product-price">￦115,000</span>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="../resources/images/pattern/common/240628_final_SWS_KR_CGRS_thumbnail_Product_640.jpg" alt="자음생캡슐세럼" />
+                <div class="stagger">
+                  <span class="product-line">자음생<br /></span>
+                  <strong class="product-description">
+                    자음생캡슐세럼 2size<br />
+                    <span class="product-size">30ml 50ml<br /></span
+                    ><!-- 1027 ws -->
+                  </strong>
+                  <span class="product-price">￦155,000</span>
+                </div>
+              </a>
+            </li>
+          </ul>
+          <ul>
+            <li>
+              <a href="#">
+                <img src="../resources/images/pattern/common/240222_final_The-Ultimate-S-Emulsion_pdp_thumbnail_640_01.jpg" alt="진설유액" />
+                <div class="stagger">
+                  <!-- 간격 띄우기 -->
+                  <span class="product-line">진설<br /></span>
+                  <strong class="product-description">
+                    진설유액<br />
+                    <span class="product-size">125ml<br /></span
+                    ><!-- 1027 ws -->
+                  </strong>
+                  <span class="product-price">￦165,000</span>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="../resources/images/pattern/common/240220_final_The-Ultimate-S-Water_pdp_thumbnail_01.jpg" alt="진설수" />
+                <div class="stagger">
+                  <span class="product-line">진설<br /></span>
+                  <strong class="product-description">
+                    진설수<br />
+                    <span class="product-size">150ml<br /></span
+                    ><!-- 1027 ws -->
+                  </strong>
+                  <span class="product-price">￦145,000</span>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="../resources/images/pattern/common/230803_final_TUS_Cream_pdp_thumb_640x640_60ml.jpg" alt="진설크림" />
+                <div class="stagger">
+                  <span class="product-line">진설<br /></span>
+                  <strong class="product-description">
+                    진설크림 2size<br />
+                    <span class="product-size">30ml 60ml<br /></span>
+                  </strong>
+                  <span class="product-price">￦290,000</span>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="../resources/images/pattern/common/230914_final_Ultimate-Serum_pdp_thumb_50ml_640x640.jpg" alt="진설세럼" />
+                <div class="stagger">
+                  <span class="product-line">진설<br /></span>
+                  <strong class="product-description">
+                    진설세럼 2size<br />
+                    <span class="product-size">30ml 60ml<br /></span
+                    ><!-- 1027 ws -->
+                  </strong>
+                  <span class="product-price">￦300,000</span>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </section>
+        <!-- item -->
+        <div class="modal-search">
+          <div class="close">
+            <i class="fa-solid fa-xmark"></i>
+          </div>
+          <div class="search">
+            <form name="searchForm" id="searchForm" method="get">
+              <input type="search" id="search-box" placeholder="궁금한 제품을 검색하세요" />
+              <input type="submit" value="검색" />
+            </form>
+          </div>
+        </div>
+      </main>
+    </div>
+    <footer id="footer" include-html="./layout/footer.html"></footer>
+    <button id="to-top" onclick="window.scrollTo(0,0)">top</button>
+  </body>
+</html>
